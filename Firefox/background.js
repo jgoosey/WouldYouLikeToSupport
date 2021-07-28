@@ -4,6 +4,6 @@ chrome.scripting.executeScript({
 });
 */
 
-chrome.browserAction.onClicked.addListener(function(tab) {
+browser.browserAction.onClicked.addListener(function(tab) {
     alert(tab.url);
 }); 

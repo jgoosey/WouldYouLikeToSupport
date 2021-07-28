@@ -1,26 +1,19 @@
 {
-  "name": "Getting Started Example",
-  "description": "Build an Extension!",
+  "name": "Would You Like to Support",
+  "description": "Support your favorite content creators by using their afilliate code(s)!",
+  "author": "Jonathan Goss",
   "version": "1.0",
   "manifest_version": 3,
-  "background": {
-    "service_worker": "background.js"
-  },
-  "permissions": ["storage", "activeTab", "scripting"],
+
+  "permissions": ["tabs"],
   "action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "16": "/images/get_started16.png",
-      "32": "/images/get_started32.png",
-      "48": "/images/get_started48.png",
-      "128": "/images/get_started128.png"
-    }
+    "default_popup": "dashboard.html",
+    "default_icon": "icons/letter-w-32px.png"
   },
   "icons": {
-    "16": "/images/get_started16.png",
-    "32": "/images/get_started32.png",
-    "48": "/images/get_started48.png",
-    "128": "/images/get_started128.png"
-  },
-  "options_page": "options.html"
+    "16"  :  "icons/letter-w-16px.png",
+    "32"  :  "icons/letter-w-32px.png",
+    "48"  :  "icons/letter-w-48px.png",
+    "128" :  "icons/letter-w-128px.png"
+  }
 }
