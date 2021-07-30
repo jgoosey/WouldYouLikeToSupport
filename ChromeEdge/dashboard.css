@@ -1,0 +1,33 @@
+.item-a {
+  grid-area: header;
+}
+.item-b {
+  grid-area: main;
+}
+.item-c {
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 5px 100px 5px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+button {
+  height: 100px;
+  width: 100px;
+  outline: none;
+  margin: 10px;
+  border: none;
+  border-radius: 2px;
+}
+
+button.current {
+  box-shadow: 0 0 0 2px white,
+              0 0 0 4px black;
+}

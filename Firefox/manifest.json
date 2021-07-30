@@ -6,10 +6,12 @@
   "manifest_version": 2,
 
   "permissions": ["tabs"],
+
   "browser_action": {
     "default_popup": "dashboard.html",
     "default_icon": "icons/letter-w-32px.png"
   },
+
   "icons": {
     "16"  :  "icons/letter-w-16px.png",
     "32"  :  "icons/letter-w-32px.png",
