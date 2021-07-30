@@ -1,16 +1,14 @@
 body{
 	font-family:Lato;
 	width: 400px;
-	height: 100%;
 }
-.container{
-	display:flex;
-}
+
 #sidebar{
 	justify-content: right;
 	display:grid;
 	background:var(--bs-gray-dark);
 	height: 100%;
+	padding: 12px;
 }
 #heading{
 	color:var(--bs-success);
@@ -27,6 +25,7 @@ body{
 	justify-content: left;	
 	display:grid;
 	height: 100%;
+	padding: 12px;
 }
 #bio{
 	align-self:center;
