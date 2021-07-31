@@ -5,11 +5,10 @@
   "version": "1.0",
   "manifest_version": 2,
 
-  "permissions": ["activeTab"],
-
-  "page_action": {
+  "browser_action": {
     "default_popup": "index.html",
-    "default_icon": "icons/WYLTS-48.png"
+    "default_icon": "icons/WYLTS-48.png",
+    "default_title": "Would You Like to Support"
   },
   
   "icons": {
