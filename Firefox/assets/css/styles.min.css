@@ -7,12 +7,12 @@ body{
 }
 #sidebar{
 	display: grid;
-	background: var(--bs-gray-dark);
+	background: #343a40;
 	height: 100%;
 	padding: 15px;
 }
 #heading{
-	color:var(--bs-success);
+	color: #18bc9c;
 }
 #sidebar-bottom{
 	width:100%;
