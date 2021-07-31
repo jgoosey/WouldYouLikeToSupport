@@ -1,0 +1,36 @@
+body{
+	font-family: Lato;
+	width: 520px;
+}
+.container{
+	display: flex;
+}
+#sidebar{
+	display: grid;
+	background: var(--bs-gray-dark);
+	height: 100%;
+	padding: 15px;
+}
+#heading{
+	color:var(--bs-success);
+}
+#sidebar-bottom{
+	width:100%;
+	border-top:1px solid #fff;
+}
+#search-text,
+#subheading{
+	color:#fff;
+}
+#content{
+	display: grid;
+	justify-self: left;
+	height: 100%;
+	padding: 15px;
+}
+#bio{
+	align-self:center;
+}
+#paypal{
+	place-self:center;
+}
