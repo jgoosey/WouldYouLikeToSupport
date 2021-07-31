@@ -1,33 +1,32 @@
 body{
-	font-family:Lato;
-	width: 400px;
+	font-family: Lato;
+	width: 520px;
 }
 .container{
-	display:flex;
+	display: flex;
 }
 #sidebar{
-	justify-content: right;
-	display:grid;
-	background:var(--bs-gray-dark);
+	display: grid;
+	background: var(--bs-gray-dark);
 	height: 100%;
-	padding: 12px;
+	padding: 15px;
 }
 #heading{
 	color:var(--bs-success);
 }
 #sidebar-bottom{
 	width:100%;
-	margin-top:10px;
-	border-top:2px solid #fff;
+	border-top:1px solid #fff;
 }
-#search-text,#subheading{
+#search-text,
+#subheading{
 	color:#fff;
 }
 #content{
-	justify-content: left;	
-	display:grid;
+	display: grid;
+	justify-self: left;
 	height: 100%;
-	padding: 12px;
+	padding: 15px;
 }
 #bio{
 	align-self:center;
