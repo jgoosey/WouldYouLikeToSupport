@@ -11,8 +11,8 @@ body{
 	height: 100%;
 	padding: 15px;
 }
-#heading{
-	color: #18bc9c;
+h1::first-letter {
+	font-size: 130%;
 }
 #sidebar-bottom{
 	width:100%;
