@@ -2,35 +2,28 @@ body{
 	font-family: Lato;
 	width: 520px;
 }
-.container{
-	display: flex;
+#content{
+	height: 100%;
+	padding: 15px;
 }
 #sidebar{
-	display: grid;
 	background: #343a40;
 	height: 100%;
 	padding: 15px;
 }
+h1 {
+	font-size: 30px;
+	color: #18bc9c;
+	margin: 0px;
+}
 h1::first-letter {
 	font-size: 130%;
 }
-#sidebar-bottom{
-	width:100%;
-	border-top:1px solid #fff;
-}
-#search-text,
 #subheading{
 	color:#fff;
 }
-#content{
-	display: grid;
-	justify-self: left;
-	height: 100%;
-	padding: 15px;
-}
-#bio{
-	align-self:center;
-}
-#paypal{
-	place-self:center;
+footer {
+	font-size: 11px;
+	position: fixed; 
+	bottom: 15px;
 }

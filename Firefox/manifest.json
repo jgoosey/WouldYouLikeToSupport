@@ -7,13 +7,11 @@
 
   "browser_action": {
     "default_popup": "index.html",
-    "default_icon": "icons/WYLTS-48.png",
+    "default_icon": "icons/W.png",
     "default_title": "Would You Like to Support"
   },
   
   "icons": {
-    "16"  :  "icons/WYLTS-16.png",
-    "48"  :  "icons/WYLTS-48.png",
-    "128" :  "icons/WYLTS-128.png"
+    "128" :  "icons/WYLTS.png"
   }
 }
