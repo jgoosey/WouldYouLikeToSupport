@@ -3,6 +3,7 @@ body{
 	width: 520px;
 }
 #content{
+	display: grid;
 	height: 100%;
 	padding: 15px;
 }
