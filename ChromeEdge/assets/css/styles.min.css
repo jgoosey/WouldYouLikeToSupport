@@ -1,16 +1,17 @@
 body{
 	font-family: Lato;
 	width: 520px;
+	display: flex;
 }
 #content{
 	display: grid;
-	height: 100%;
 	padding: 15px;
+	align-items: stretch;
 }
 #sidebar{
 	background: #343a40;
-	height: 100%;
 	padding: 15px;
+	align-items: stretch;
 }
 h1 {
 	font-size: 30px;

@@ -3,9 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>WouldYouLikeToSupport</title>
-	<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&amp;display=swap">
-	<link rel="stylesheet" href="/assets/css/styles.min.css">
+	<link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
 <body>
@@ -13,7 +13,42 @@
 		<div class="row">
 			<div class="col" id="content">
 				<div class="row">
-					
+				<div class="overflow-auto">
+					<?php
+						require("assets/db.php");
+
+						$sql = 'SELECT affiliate_name, website_name, website_url, affiliate_code FROM `wylts-codes`';
+						$result = $conn->query($sql);
+
+						if ($result->num_rows > 0) {
+							while ($code = $result->fetch_assoc()){
+								echo '
+								<table class="table table-hover">
+									<thead>
+										<tr>
+											<td>'.$code["website_name"].'</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>'.$code["website_url"].'</td>
+										</tr>
+										<tr>
+											<td>'.$code["affiliate_name"].'</td>
+										</tr>
+										<tr>
+											<td>'.$code["affiliate_code"].'</td>
+										</tr>
+									</tbody>
+								</table>
+								';
+							}
+						} else {
+							printf($conn->error);
+						}
+						$conn->close();
+					?>
+				</div>
 				</div>
 				<footer class="footer py-3 bg-light">
 				  <div class="container">
@@ -44,7 +79,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
