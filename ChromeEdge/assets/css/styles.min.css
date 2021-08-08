@@ -1,17 +1,17 @@
 body{
 	font-family: Lato;
 	width: 520px;
-	display: flex;
+	display: grid;
 }
 #content{
 	display: grid;
 	padding: 15px;
-	align-items: stretch;
+	align-items: center;
 }
 #sidebar{
+	display: grid;
 	background: #343a40;
 	padding: 15px;
-	align-items: stretch;
 }
 h1 {
 	font-size: 30px;
@@ -25,7 +25,6 @@ h1::first-letter {
 	color:#fff;
 }
 footer {
-	font-size: 11px;
-	position: fixed; 
-	bottom: 15px;
+	font-size: 11px; 
+
 }
