@@ -18,11 +18,7 @@ CsvToHtmlTable = {
       customTemplates[colIdx] = func;
     });
 
-    var $table = $(
-      '<table class="table table-hover table-condensed table-sm" id="' +
-        el +
-        '-table"></table>'
-    );
+    var $table = $('<table class="hover" id="' + el + '-table"></table>');
     var $containerElement = $("#" + el);
     $containerElement.empty().append($table);
 
