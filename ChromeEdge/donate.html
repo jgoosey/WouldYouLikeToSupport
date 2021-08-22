@@ -2,8 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>WouldYouLikeToSupport</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Would You Like To Support</title>
+    <link rel="stylesheet" href="assets/foundation/css/foundation.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&amp;display=swap"
@@ -12,9 +16,9 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col" style="display: grid">
+    <div class="grid-container fluid">
+      <div class="grid-x body-wrapper">
+        <div class="cell small-6" style="justify-content: center; margin: 20px">
           <p style="font-size: 14px; margin-top: 20px">
             Would You Like to Support is an application I made in my free time
             during COVID lockdown. I was tired of replaying podcasts just to
@@ -31,7 +35,6 @@
             action="https://www.paypal.com/donate"
             method="post"
             target="_top"
-            style="justify-self: center"
           >
             <input
               type="hidden"
@@ -55,23 +58,20 @@
             />
           </form>
         </div>
-        <div class="col-4" id="sidebar">
-          <div class="row" id="sidebar-top">
-            <div class="col">
-              <h1>Would</h1>
-              <h1>You</h1>
-              <h1>Like</h1>
-              <h1>To</h1>
-              <h1>Support</h1>
-              <p id="subheading" class="lead"><br />Me?<br /><br /></p>
-            </div>
+        <!-- Sidebar -->
+        <div class="cell small-4" id="sidebar">
+          <!-- Sidebar header -->
+          <div class="cell">
+            <h1>Would</h1>
+            <h1>You</h1>
+            <h1>Like</h1>
+            <h1>To</h1>
+            <h1>Support</h1>
+            <p id="subheading" class="lead"><br />Me?<br /><br /></p>
           </div>
-          <div class="row" id="backbutton">
-            <a
-              type="button"
-              class="btn btn-outline-secondary"
-              href="index.html"
-            >
+          <!-- Back button -->
+          <!-- <div class="grid-x" id="backbutton">
+            <a type="button" class="hollow button secondary" href="index.html">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -87,11 +87,14 @@
               </svg>
               Back
             </a>
-          </div>
+          </div> -->
+          <!-- End Back button -->
         </div>
+        <!-- End sidebar -->
       </div>
+      <!-- End body-wrapper -->
     </div>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- End grid-container -->
+    <script src="assets/foundation/js/foundation.js"></script>
   </body>
 </html>

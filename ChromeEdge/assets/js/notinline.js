@@ -6,7 +6,7 @@ function format_link(link) {
 }
 
 CsvToHtmlTable.init({
-  csv_path: "data/codes.csv",
+  csv_path: "~/data/codes.csv",
   element: "table-container",
   allow_download: false,
   csv_options: {
@@ -14,7 +14,9 @@ CsvToHtmlTable.init({
     delimiter: '"',
   },
   datatables_options: {
-    paging: false,
+    paging: true,
+    scrollY: 5,
+    scroller: true,
   },
   custom_formatting: [[2, format_link]],
 });
