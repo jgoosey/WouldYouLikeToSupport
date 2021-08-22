@@ -1,51 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>WouldYouLikeToSupport</title>
-	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&amp;display=swap">
-	<link rel="stylesheet" href="assets/css/styles.min.css">
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Would You Like To Support</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&amp;display=swap"
+    />
+    <link rel="stylesheet" href="assets/css/styles.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.min.css"
+    />
+  </head>
 
-<body>
-	<div class="container">
-		<div class="row">
-			<div class="col" id="content">
-				
-				<a type="button" class="btn btn-outline-success" href="website.php" style="place-self: center stretch; margin: 55px 0 55px 0;">Search by website name
-				</a>
-				
-				<a type="button" class="btn btn-outline-success" href="affiliate.php" style="place-self: center stretch; margin: 55px 0 55px 0;">Search by affiliate name
-				</a>
-				
-				<footer class="footer py-3 bg-light">
-					<div class="container">
-					  <span class="text-muted">Would You Like To Support me?
-					  <a  href="donate.html">Click here to donate</a> 
-					</span>
-					</div>
-				</footer>
-			</div>
-			<div class="col-4" id="sidebar">
-				<div class="row" id="sidebar-top">
-					<div class="col">
-						<h1>Would</h1>
-						<h1>You</h1>
-						<h1>Like</h1>
-						<h1>To</h1>
-						<h1>Support</h1>
-					</div>
-				</div>
-				<div class="row" id="sidebar-bottom" style="align-items: end;">
-					<p id="subheading" style="font-size: 16px;">
-						A simple solution to support your favorite content creator(s) by using their affiliate code(s) at checkout!
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-</body>
-
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col" id="content">
+          <div id="table-container"></div>
+          <footer class="footer py-3 bg-light">
+            <div class="container">
+              <span class="text-muted"
+                >Would You Like To Support me?
+                <a href="donate.html">Click here to donate</a>
+              </span>
+            </div>
+          </footer>
+        </div>
+        <div class="col-3" id="sidebar">
+          <div class="row" id="sidebar-top">
+            <div class="col">
+              <h1>Would</h1>
+              <h1>You</h1>
+              <h1>Like</h1>
+              <h1>To</h1>
+              <h1>Support</h1>
+            </div>
+          </div>
+          <div class="row" id="sidebar-bottom">
+            <p id="subheading" style="font-size: 16px">
+              A simple solution to support your favorite content creator(s) by
+              using their affiliate code(s) at checkout!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.min.js"></script>
+    <script src="assets/js/csv_to_html_table.js"></script>
+    <script src="assets/js/jquery.csv.min.js"></script>
+    <script src="assets/js/notinline.js"></script>
+  </body>
 </html>
