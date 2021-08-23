@@ -1,15 +1,10 @@
 body {
   font-family: sans-serif;
-  display: flex;
 }
 #content {
   margin-top: 20px;
   margin-left: 12px;
 }
-/* table {
-  text-align: center;
-  width: 200px;
-} */
 #sidebar {
   background: #343a40;
   padding: 10px;

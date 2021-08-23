@@ -4,12 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Would You Like To Support</title>
-    <link rel="stylesheet" href="assets/foundation/css/foundation.css" />
-    <link rel="stylesheet" href="assets/css/styles.min.css" />
+    <link rel="shortcut icon" href="#" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdn.datatables.net/v/zf/jq-3.3.1/dt-1.10.25/r-2.2.9/rg-1.1.3/sc-2.0.4/sp-1.3.0/datatables.min.css"
+      href="assets/foundation/css/foundation.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/datatables/datatables.min.css"
     />
   </head>
 
@@ -19,18 +24,112 @@
         <div class="cell small-8" id="content">
           <!-- DataTable -->
           <!-- <div id="table-container"></div> -->
-          <table class="hover">
+          <table class="hover" id="codes_table">
             <thead>
-              <th>one</th>
-              <th>two</th>
-              <th>three</th>
-              <th>four</th>
+              <tr>
+                <th>Affiliate Name</th>
+                <th>Website Name</th>
+                <th>Website URL</th>
+                <th>Affiliate Code</th>
+              </tr>
             </thead>
             <tbody>
-              <td>hello</td>
-              <td>hello</td>
-              <td>hello</td>
-              <td>hello</td>
+              <tr>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+              </tr>
+              <tr>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+              </tr>
+              <tr>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+              </tr>
+              <tr>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+              </tr>
+              <tr>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+              </tr>
+              <tr>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+              </tr>
+              <tr>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+              </tr>
+              <tr>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+              </tr>
+              <tr>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+              </tr>
+              <tr>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+              </tr>
+              <tr>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+              </tr>
+              <tr>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+              </tr>
+              <tr>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+              </tr>
+              <tr>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+              </tr>
+              <tr>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+              </tr>
+              <tr>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -66,19 +165,27 @@
       <!-- End body-wrapper -->
     </div>
     <!-- End grid-container -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script src="assets/datatables/jQuery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="assets/datatables/js/jquery.dataTables.min.js"></script>
     <script
       type="text/javascript"
-      src="https://cdn.datatables.net/v/zf/jq-3.3.1/dt-1.10.25/r-2.2.9/rg-1.1.3/sc-2.0.4/sp-1.3.0/datatables.min.js"
+      src="assets/datatables/datatables.min.js"
     ></script>
     <script src="assets/foundation/js/foundation.js"></script>
     <!-- <script src="assets/js/csv_to_html_table.js"></script>
     <script src="assets/js/jquery.csv.min.js"></script>
     <script src="notinline.js"></script> -->
+    <script>
+      $(document).ready(function () {
+        $("#codes_table").DataTable({
+          paging: true,
+          scrollY: 400,
+          info: false,
+          language: {
+            searchPlaceholder: "Search for a name, website, or code!",
+          },
+        });
+      });
+    </script>
   </body>
 </html>
