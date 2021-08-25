@@ -5,6 +5,9 @@ body {
   margin-top: 20px;
   margin-left: 12px;
 }
+#codes_table_wrapper {
+  padding-right: 5px !important;
+}
 #sidebar {
   background: #343a40;
   padding: 10px;
