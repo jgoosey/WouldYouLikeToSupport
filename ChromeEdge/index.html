@@ -21,23 +21,27 @@
   <body>
     <div class="grid-container full">
       <div class="grid-x">
-        <div class="cell auto" id="content">
+        <div class="cell small-9" id="content">
           <!-- DataTable -->
-          <table class="hover compact" id="codes_table"></table>
+          <table
+            class="hover compact"
+            id="codes_table"
+            style="width: 80%"
+          ></table>
         </div>
         <!-- Sidebar -->
-        <div class="cell small-3" id="sidebar">
+        <div class="cell auto" id="sidebar">
           <!-- Header -->
           <div id="sidebar-top">
-            <h1>Would</h1>
-            <h1>You</h1>
-            <h1>Like</h1>
-            <h1>To</h1>
-            <h1>Support</h1>
+            <h2>Would</h2>
+            <h2>You</h2>
+            <h2>Like</h2>
+            <h2>To</h2>
+            <h2>Support</h2>
           </div>
           <!-- Subheader -->
           <div id="sidebar-bottom">
-            <p class="h6" id="subheading">
+            <p id="subheading">
               A simple solution to support your favorite content creator(s) by
               using their affiliate code(s) at checkout!
             </p>
@@ -47,9 +51,7 @@
             <p style="color: #909399">
               Would You Like To Support me?
               <!-- Change to working site URL on prod -->
-              <a href="http://localhost:8000/donate.html"
-                >Click here to donate</a
-              >
+              <a href="#">Click here to donate</a>
             </p>
           </footer>
         </div>
@@ -62,10 +64,7 @@
     <script src="/assets/datatables/DataTables-1.10.25/js/jquery.dataTables.min.js"></script>
     <script src="/assets/datatables/datatables.min.js"></script>
     <script src="/assets/foundation/js/foundation.js"></script>
-    <!-- <script src="assets/js/csv_to_html_table.js"></script>
-    <script src="assets/js/jquery.csv.min.js"></script> -->
     <script src="/assets/js/papaparse.min.js"></script>
     <script src="/csv_to_table.js"></script>
-    <!-- <script src="notinline.js"></script> -->
   </body>
 </html>
