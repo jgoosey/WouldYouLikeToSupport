@@ -1,4 +1,18 @@
-html {
+html,
+body {
   font-family: sans-serif;
-  background: #343a40;
+  background-color: #343a40 !important;
+}
+p,
+span {
+  color: white;
+}
+a.nav-item,
+h1,
+h4 {
+  color: #18bc9c;
+}
+button {
+  background-color: #18bc9c !important;
+  padding: 20px;
 }
