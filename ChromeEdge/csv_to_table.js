@@ -87,7 +87,13 @@ function createTable(tableData, callback) {
 
   table.empty();
 
-  var header_columns = ["Name", "Website", "URL", "Code"];
+  var header_columns = [
+    "Category",
+    "Affiliate Name",
+    "Website Name",
+    "Website Link",
+    "Checkout Code",
+  ];
   var thead_tr = $("<tr>");
   $.each(header_columns, function (x, hcol) {
     $("<th>").text(hcol).appendTo(thead_tr);
@@ -115,22 +121,20 @@ function DataTable() {
     info: false,
     responsive: true,
     colReorder: {
-      order: [0, 1, 3, 2],
+      order: [0, 1, 4, 2],
     },
     language: {
-      searchPlaceholder: "name, website, or code",
+      searchPlaceholder: "category, name, website, or code",
     },
     columnDefs: [
       {
-        targets: 2,
-        render: $.fn.dataTable.render.hyperLink(),
+        render: function (data, type, row) {
+          return '<a href="' + row[3] + '" target="_blank">' + row[2] + "</a>";
+        },
+        targets: [3, 2],
       },
-      { orderable: false, targets: 2 },
+      { visible: false, targets: [2] },
     ],
-    /* lengthMenu: [
-      [10, 25, 50, -1],
-      [10, 25, 50, "All"],
-    ], */
   });
   //console.log("DataTable finished");
 }
@@ -148,3 +152,14 @@ Papa.parse("data/codes.csv", {
     createTable(results, DataTable);
   },
 });
+
+// $(document).ready(function () {
+//   var table = $("#codes_table").DataTable();
+
+//   $("#codes_table tbody").on("click", "tr", function () {
+//     var data = table.row(this).data();
+//     data[2].select();
+//     document.execCommand("copy");
+//     alert(data[2].toString());
+//   });
+// });
