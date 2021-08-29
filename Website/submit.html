@@ -1,60 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eng">
   <head>
     <meta charset="utf-8" />
+    <title>Would You Like to Support</title>
+
+    <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Would You Like To Support</title>
-    <meta name="description" content="Would you like to submit codes?" />
-    <meta name="author" content="Jonathan Goss" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
   </head>
+
   <body>
-    <div class="container d-flex p-3 mx-auto flex-column">
-      <header class="mb-auto">
-        <div>
-          <nav
-            class="
-              nav nav-tabs nav-masthead
-              justify-content-center
-              float-md-end
-            "
-          >
-            <a class="nav-item nav-link" href="/index.html">Home</a>
-            <a class="nav-item nav-link active" href="/submit.html">Submit</a>
-            <a class="nav-item nav-link" href="/donate.html">Donate</a>
-          </nav>
-        </div>
-      </header>
-
-      <main class="px-3">
-        <h1>Would You Like to Submit Codes?</h1>
-        <p style="margin-top: 20px">
-          Would You Like to Support aims to provide you with a comprehensive
-          list of <strong>ALL</strong> of the affiliate codes you would want in
-          order to support your favorite content creator(s). If you do not see a
-          code, creator, or website you would like to use, please use the
-          following form to submit this information so the application can be
-          updated:
-        </p>
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSchew_4GqF_MgrNZrZX00-Z9PJ-dSLeaxdQ7QdHsBR6BpkTJQ/viewform?embedded=true"
-          width="800"
-          height="400"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          >WYLTS</iframe
+    <header class="navigation fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand font-tertiary h3" href="index.html"
+          ><img src="images/WYLTS.png" alt="WYLTS Coupon Image"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-      </main>
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <footer class="footer">
-        <div class="container">
-          <span class="text-muted">Made by Jonathan Goss</span>
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="submit.html">Submit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="donate.html">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-      </footer>
-    </div>
+      </nav>
+    </header>
+
+    <!-- hero area -->
+    <section class="hero-area bg-primary" id="parallax">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-11 mx-auto text-center">
+            <h1 class="font-tertiary">Would You Like to Submit</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /hero area -->
+
+    <!-- subheader -->
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 mx-auto text-center">
+            <p class="font-secondary paragraph-lg text-dark">
+              Would You Like to Support aims to provide you with a comprehensive
+              list of <strong>ALL</strong> of the affiliate codes you would want
+              in order to support your favorite content creator(s). If you do
+              not see a code, creator, or website you would like to use, please
+              use the following form to submit this information:
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /subheader -->
+
+    <!-- submission form -->
+    <section
+      class="section section-on-footer"
+      data-background="images/backgrounds/bg-dots.png"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSchew_4GqF_MgrNZrZX00-Z9PJ-dSLeaxdQ7QdHsBR6BpkTJQ/viewform?embedded=true"
+            width="800"
+            height="1200"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            background="#fff"
+            >WYLTS</iframe
+          >
+        </div>
+      </div>
+    </section>
+    <!-- /submission form -->
+
+    <!-- footer -->
+    <footer class="bg-dark footer-section">
+      <div class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h5 class="text-light">Email</h5>
+              <p class="text-white paragraph-lg font-secondary">
+                support@wouldyouliketosupport.com
+              </p>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+              <h5 class="text-light">Website</h5>
+              <a class="text-white paragraph-lg font-secondary" href="#"
+                >Would You Like to Support</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-top text-center border-dark py-3">
+        <p class="mb-0 text-light">
+          Copyright ©
+          <script>
+            var CurrentYear = new Date().getFullYear();
+            document.write(CurrentYear);
+          </script>
+          <br />
+          Kross theme by <a href="https://themefisher.com">themefisher.com</a>
+        </p>
+      </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
   </body>
 </html>

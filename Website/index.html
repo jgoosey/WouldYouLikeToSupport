@@ -1,70 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eng">
   <head>
     <meta charset="utf-8" />
+    <title>Would You Like to Support</title>
+
+    <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Would You Like To Support</title>
     <meta
-      name="description"
-      content="A simple solution to support your favorite content creator(s) by
-              using their affiliate code(s) at checkout!"
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <meta name="author" content="Jonathan Goss" />
 
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- ** Plugins Needed for the Project ** -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
   </head>
+
   <body>
-    <div class="container d-flex p-3 mx-auto flex-column">
-      <header class="mb-auto">
-        <div>
-          <nav
-            class="
-              nav nav-tabs nav-masthead
-              justify-content-center
-              float-md-end
-            "
-          >
-            <a class="nav-item nav-link active" href="/index.html">Home</a>
-            <a class="nav-item nav-link" href="/submit.html">Submit</a>
-            <a class="nav-item nav-link" href="/donate.html">Donate</a>
-          </nav>
+    <header class="navigation fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand font-tertiary h3" href="index.html"
+          ><img src="images/WYLTS.png" alt="WYLTS Coupon Image"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navigation"
+          aria-controls="navigation"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="submit.html">Submit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="donate.html">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-      </header>
+      </nav>
+    </header>
 
-      <main class="px-3">
-        <h1>Would You Like to Support?</h1>
-        <p class="lead">
-          A simple solution to support your favorite content creator(s) by using
-          their affiliate code(s) at checkout!
-        </p>
-
-        <div class="d-grid gap-2">
-          <span>
-            Please use the following buttons below to download the extension for
-            your browser:</span
-          >
-          <button
-            class="btn btn-lg btn-primary btn-outline-light"
-            type="button"
-          >
-            Chrome/Edge
-          </button>
-          <button
-            class="btn btn-lg btn-primary btn-outline-light"
-            type="button"
-          >
-            Firefox
-          </button>
+    <!-- hero area -->
+    <section class="hero-area bg-primary" id="parallax">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-11 mx-auto text-center">
+            <h1 class="font-tertiary">Would You Like to Support</h1>
+          </div>
         </div>
-      </main>
+      </div>
+    </section>
+    <!-- /hero area -->
 
-      <footer class="footer">
+    <!-- subheader -->
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 mx-auto text-center">
+            <p class="font-secondary paragraph-lg text-dark">
+              A simple solution to support your favorite content creator(s) by
+              using their affiliate code at checkout!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /subheader -->
+
+    <!-- download extension -->
+    <section class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-title">Download</h2>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-80">
+            <a class="btn d-flex" href="#">
+              <div class="mr-lg-5 mr-3">
+                <image
+                  src="images/icons/chrome_icon.png"
+                  alt="Google Chrome broswer logo"
+                  width="100"
+                  height="100"
+                ></image>
+              </div>
+              <div>
+                <p class="text-dark mb-1">Click to download for</p>
+                <h3>Chrome</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-80">
+            <a class="btn d-flex" href="#">
+              <div class="mr-lg-5 mr-3">
+                <image
+                  src="images/icons/safari_icon.png"
+                  alt="Apple Safari browser logo"
+                  width="100"
+                  height="100"
+                ></image>
+              </div>
+              <div>
+                <p class="text-dark mb-1">Click to download for</p>
+                <h3>Safari</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-80">
+            <a class="btn d-flex" href="#">
+              <div class="mr-lg-5 mr-3">
+                <image
+                  src="images/icons/firefox_icon.png"
+                  alt="Mozilla Firefox browser logo"
+                  width="100"
+                  height="100"
+                ></image>
+              </div>
+              <div>
+                <p class="text-dark mb-1">Click to download for</p>
+                <h3>Firefox</h3>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-80">
+            <a class="btn d-flex" href="#">
+              <div class="mr-lg-5 mr-3">
+                <image
+                  src="images/icons/edge_icon.png"
+                  alt="Microsoft Edge browser logo"
+                  width="100"
+                  height="100"
+                ></image>
+              </div>
+              <div>
+                <p class="text-dark mb-1">Click to download for</p>
+                <h3>Edge</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- bg image -->
+      <img
+        class="img-fluid edu-bg-image w-100"
+        src="images/backgrounds/education-bg.png"
+        alt="bg-image"
+      />
+    </section>
+    <!-- /download extension -->
+
+    <!-- footer -->
+    <footer class="bg-dark footer-section">
+      <div class="section">
         <div class="container">
-          <span class="text-muted">Made by Jonathan Goss</span>
+          <div class="row">
+            <div class="col-md-4">
+              <h5 class="text-light">Email</h5>
+              <p class="text-white paragraph-lg font-secondary">
+                support@wouldyouliketosupport.com
+              </p>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+              <h5 class="text-light">Website</h5>
+              <a class="text-white paragraph-lg font-secondary" href="#"
+                >Would You Like to Support</a
+              >
+            </div>
+          </div>
         </div>
-      </footer>
-    </div>
+      </div>
+      <div class="border-top text-center border-dark py-3">
+        <p class="mb-0 text-light">
+          Copyright ©
+          <script>
+            var CurrentYear = new Date().getFullYear();
+            document.write(CurrentYear);
+          </script>
+          <br />
+          Kross theme by <a href="https://themefisher.com">themefisher.com</a>
+        </p>
+      </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/script.js"></script>
   </body>
 </html>

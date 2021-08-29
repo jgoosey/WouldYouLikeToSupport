@@ -23,6 +23,9 @@ table th {
 h2 {
   color: #18bc9c;
 }
+h2::first-letter {
+  font-size: 125%;
+}
 #subheading {
   color: #fff;
 }

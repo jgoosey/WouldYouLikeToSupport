@@ -49,10 +49,10 @@
             <li class="nav-item">
               <a class="nav-link" href="submit.html">Submit</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="donate.html">Donate</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
@@ -65,7 +65,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-11 mx-auto text-center">
-            <h1 class="font-tertiary">Would You Like to Donate</h1>
+            <h1 class="font-tertiary">Would You Like to Contact</h1>
           </div>
         </div>
       </div>
@@ -78,14 +78,8 @@
         <div class="row">
           <div class="col-lg-9 mx-auto text-center">
             <p class="font-secondary paragraph-lg text-dark">
-              Would You Like to Support is an application I made in my free time
-              during quarantine. I was tired of replaying podcasts just to hear
-              the ad break, going to social media pages to find the creators
-              affiliations, or using mobile checkouts.
-              <br />
-              <br />
-              If you feel like this application has earned it, please consider
-              donating so I can buy my coworker (my dog) a nice treat!
+              Please use the form below if you would like to submit a bug, ask
+              for a feature, or give feedback. Thank you!
             </p>
           </div>
         </div>
@@ -93,46 +87,56 @@
     </section>
     <!-- /subheader -->
 
-    <!-- donation form -->
-    <section class="section p-10">
+    <!-- contact -->
+    <section
+      class="section section-on-footer"
+      data-background="images/backgrounds/bg-dots.png"
+    >
       <div class="container">
-        <div class="row justify-content-center">
-          <form
-            action="https://www.paypal.com/donate"
-            method="post"
-            target="_top"
-          >
-            <input
-              type="hidden"
-              name="hosted_button_id"
-              value="MQJZC8A5993RU"
-            />
-            <input
-              type="image"
-              src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-              border="0"
-              name="submit"
-              title="PayPal - The safer, easier way to pay online!"
-              alt="Donate with PayPal button"
-            />
-            <img
-              alt=""
-              border="0"
-              src="https://www.paypal.com/en_US/i/scr/pixel.gif"
-              width="1"
-              height="1"
-            />
-          </form>
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="section-title">Contact Info</h2>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <div class="bg-white rounded text-center p-5 shadow-down">
+              <h4 class="mb-80">Contact Form</h4>
+              <form action="#" class="row">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Full Name"
+                    class="form-control px-0 mb-4"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email Address"
+                    class="form-control px-0 mb-4"
+                  />
+                </div>
+                <div class="col-12">
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="form-control px-0 mb-4"
+                    placeholder="Type Message Here"
+                  ></textarea>
+                </div>
+                <div class="col-lg-6 col-10 mx-auto">
+                  <button class="btn btn-primary w-100">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- bg image -->
-      <img
-        class="img-fluid bg-image w-100"
-        src="images/backgrounds/bg-dots.png"
-        alt="bg-image"
-      />
     </section>
-    <!-- /donation form -->
+    <!-- /contact -->
 
     <!-- footer -->
     <footer class="bg-dark footer-section">
