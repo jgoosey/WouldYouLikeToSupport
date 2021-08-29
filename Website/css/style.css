@@ -223,8 +223,8 @@ a:hover {
 }
 
 .section {
-  padding-top: 40px;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .section-title {
@@ -388,7 +388,7 @@ textarea.form-control {
 
 /* /card */
 .navigation {
-  padding: 40px 130px;
+  padding: 20px 130px;
   transition: 0.3s ease;
 }
 
@@ -509,7 +509,15 @@ textarea.form-control {
 .edu-bg-image {
   position: absolute;
   left: 0;
-  top: 400px;
+  top: 250px;
+  z-index: -1;
+}
+
+/* dwnld-bg-img */
+.dwnld-bg-image {
+  position: absolute;
+  left: 0;
+  top: 1100px;
   z-index: -1;
 }
 
