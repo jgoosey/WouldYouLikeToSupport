@@ -8,11 +8,10 @@ VERSION:	Version 0.5
 [TABLE OF CONTENTS]
 -------------------------------------------------------------------*/
 /*  typography */
-@import url("https://fonts.googleapis.com/css?family=Oxygen|Roboto");
+@import url("https://fonts.googleapis.com/css?family=Oxygen|Noto+Sans");
 
 body {
-  line-height: 1.2;
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   color: #4c4c4c;
@@ -24,12 +23,14 @@ p,
   color: #4c4c4c;
   font-size: 15px;
   line-height: 1.8;
-  font-family: "Roboto", sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 p-lg,
 .paragraph-lg {
-  font-size: 22px;
+  font-weight: 400 regular;
+  font-size: 26px;
+  font-family: "Noto Sans", sans-serif;
 }
 
 h1,
@@ -228,7 +229,7 @@ a:hover {
 
 .section-title {
   margin-bottom: 80px;
-  font-family: "Roboto";
+  font-family: "Noto Sans";
 }
 
 .bg-cover {
@@ -338,11 +339,11 @@ a:hover {
 }
 
 .font-secondary {
-  font-family: "Oxygen", sans-serif !important;
+  font-family: "Noto Sans", sans-serif !important;
 }
 
 .font-tertiary {
-  font-family: "Roboto" !important;
+  font-family: "Noto Sans" !important;
   color: #18bc9c;
 }
 
@@ -410,7 +411,7 @@ textarea.form-control {
 }
 
 .navbar .nav-item .nav-link {
-  font-family: "Roboto";
+  font-family: "Noto Sans";
   text-transform: uppercase;
   padding: 15px;
 }
@@ -500,6 +501,7 @@ textarea.form-control {
 .bg-image {
   position: absolute;
   left: 0;
+  top: 400px;
   z-index: -1;
 }
 
