@@ -3,8 +3,8 @@
 html,
 body {
   font-family: sans-serif;
-  width: 750px;
-  height: 497px;
+  width: 800px;
+  height: 510px;
 }
 #content {
   margin: 10px 0 10px 5px;
@@ -20,10 +20,10 @@ table th {
   padding: 10px;
   display: inline-block;
 }
-h2 {
+h3 {
   color: #18bc9c;
 }
-h2::first-letter {
+h3::first-letter {
   font-size: 125%;
 }
 #subheading {
