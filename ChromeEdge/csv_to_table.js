@@ -90,9 +90,10 @@ function createTable(tableData, callback) {
   var header_columns = [
     "Category",
     "Affiliate Name",
+    "Checkout Code",
     "Website Name",
     "Website Link",
-    "Checkout Code",
+    "Instagram",
   ];
   var thead_tr = $("<tr>");
   $.each(header_columns, function (x, hcol) {
@@ -121,23 +122,31 @@ function DataTable() {
     info: false,
     responsive: true,
     colReorder: {
-      order: [0, 1, 4, 2],
+      order: [1, 0, 2, 4, 5],
     },
+    order: [[1, "asc"]],
     language: {
       searchPlaceholder: "category, name, website, or code",
     },
     columnDefs: [
       {
         render: function (data, type, row) {
-          return '<a href="' + row[3] + '" target="_blank">' + row[2] + "</a>";
+          return '<a href="' + row[4] + '" target="_blank">' + row[3] + '</a>';
         },
-        targets: [3, 2],
+        targets: [3, 4],
       },
-      { visible: false, targets: [2] },
+      {
+        render: function (data, type, row) {
+          return '<a href="' + row[5] + '" target="_blank">Instagram</a>';
+        },
+        targets: -1,
+      },
+      { visible: false, targets: [3] },
     ],
   });
   //console.log("DataTable finished");
 }
+
 
 Papa.parse("data/codes.csv", {
   header: true,
@@ -148,7 +157,7 @@ Papa.parse("data/codes.csv", {
   fastMode: true,
   complete: function (results) {
     //console.log(results.meta.fields);
-    //console.log("Parsing complete:", results.data);
+    console.log("Parsing complete:", results.data);
     createTable(results, DataTable);
   },
 });
