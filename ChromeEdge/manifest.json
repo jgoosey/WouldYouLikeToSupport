@@ -8,7 +8,7 @@
   "content_security_policy": "script-src 'self'; object-src 'self';",
 
   "browser_action": {
-    "default_popup": "index.html",
+    "default_popup": "popup.html",
     "default_icon": "icons/W.png",
     "default_title": "Would You Like to Support"
   },
