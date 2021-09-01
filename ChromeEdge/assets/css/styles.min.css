@@ -9,9 +9,6 @@ body {
 #content {
   margin: 10px 0 10px 5px;
 }
-table th {
-  text-align: center !important;
-}
 #codes_table_wrapper {
   padding-right: 5px !important;
 }
