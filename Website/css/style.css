@@ -21,7 +21,7 @@ p,
 .paragraph {
   font-weight: 400;
   color: #4c4c4c;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.8;
   font-family: "Noto Sans", sans-serif;
 }
@@ -388,7 +388,7 @@ textarea.form-control {
 
 /* /card */
 .navigation {
-  padding: 20px 130px;
+  padding: 20px 100px;
   transition: 0.3s ease;
 }
 
@@ -425,7 +425,7 @@ textarea.form-control {
 }
 
 .hero-area {
-  padding: 200px 0 100px;
+  padding: 150px 0 80px;
   position: relative;
 }
 
