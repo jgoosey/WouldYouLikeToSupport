@@ -134,12 +134,12 @@ function DataTable() {
         },
         targets: [3, 4],
       },
-      {
-        render: function (data, type, row) {
-          return '<a href="' + row[5] + '" target="_blank">Instagram</a>';
-        },
-        targets: -1,
-      },
+      // {
+      //   render: function (data, type, row) {
+      //     return '<a href="' + row[5] + '" target="_blank">Instagram</a>';
+      //   },
+      //   targets: -1,
+      // },
       { visible: false, targets: [3] },
     ],
   });
