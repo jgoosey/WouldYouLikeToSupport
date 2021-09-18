@@ -116,8 +116,7 @@ function createTable(tableData, callback) {
 function DataTable() {
   $("#codes_table").DataTable({
     paging: true,
-    scrollY: '70.9vh',
-    scrollCollapse: true,
+    scrollY: '72vh',
     scrollX: false,
     info: false,
     responsive: true,

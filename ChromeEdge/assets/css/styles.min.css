@@ -4,7 +4,7 @@ html,
 body {
   font-family: sans-serif;
   width: 700px;
-  height: 525px;
+  height: auto;
 }
 #content {
   margin: 10px 0 10px 5px;
