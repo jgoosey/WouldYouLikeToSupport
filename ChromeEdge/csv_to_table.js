@@ -92,8 +92,7 @@ function createTable(tableData, callback) {
     "Affiliate Name",
     "Checkout Code",
     "Website Name",
-    "Website Link",
-    "Instagram",
+    "Website Link"
   ];
   var thead_tr = $("<tr>");
   $.each(header_columns, function (x, hcol) {
@@ -122,7 +121,7 @@ function DataTable() {
     info: false,
     responsive: true,
     colReorder: {
-      order: [1, 0, 2, 4, 5],
+      order: [1, 0, 2, 4],
     },
     order: [[1, "asc"]],
     language: {
