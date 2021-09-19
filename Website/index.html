@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Would You Like to Support</title>
+    
 
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,6 +22,9 @@
     <!--Favicon-->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- jQuery -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
   </head>
 
   <body>
@@ -180,67 +184,54 @@
           <div class="col-lg-12 text-center">
             <h2 class="section-title">Download (COMING SOON)</h2>
           </div>
-          <div class="col-lg-6 col-md-6 mb-80">
+          <div class="col-lg-10 col-md-8 mb-80 d-flex align-items-center justify-content-center">
             <a class="btn d-flex" href="#">
               <div class="mr-lg-5 mr-3">
                 <image
-                  src="images/icons/chrome_icon.png"
-                  alt="Google Chrome broswer logo"
+                  src=""
+                  alt=""
                   width="50"
                   height="50"
+                  id="main-img"
                 ></image>
               </div>
               <div>
                 <p class="text-dark mb-1">Click to download for</p>
-                <h3>Chrome</h3>
+                <h3 id="main-h"></h3>
               </div>
             </a>
           </div>
-          <div class="col-lg-6 col-md-6 mb-80">
+          <div class="col-lg-6 col-md-6 mb-80 d-flex align-items-center justify-content-center">
             <a class="btn d-flex" href="#">
               <div class="mr-lg-5 mr-3">
                 <image
-                  src="images/icons/safari_icon.png"
-                  alt="Apple Safari browser logo"
+                  src=""
+                  alt=""
                   width="50"
                   height="50"
+                  id="other1-img"
                 ></image>
               </div>
               <div>
                 <p class="text-dark mb-1">Click to download for</p>
-                <h3>Safari</h3>
+                <h3 id="other1-h"></h3>
               </div>
             </a>
           </div>
-          <div class="col-lg-6 col-md-6 mb-80">
+          <div class="col-lg-6 col-md-6 mb-80 d-flex align-items-center justify-content-center">
             <a class="btn d-flex" href="#">
               <div class="mr-lg-5 mr-3">
                 <image
-                  src="images/icons/firefox_icon.png"
-                  alt="Mozilla Firefox browser logo"
+                  src=""
+                  alt=""
                   width="50"
                   height="50"
+                  id="other2-img"
                 ></image>
               </div>
               <div>
                 <p class="text-dark mb-1">Click to download for</p>
-                <h3>Firefox</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-6 col-md-6 mb-80">
-            <a class="btn d-flex" href="#">
-              <div class="mr-lg-5 mr-3">
-                <image
-                  src="images/icons/edge_icon.png"
-                  alt="Microsoft Edge browser logo"
-                  width="50"
-                  height="50"
-                ></image>
-              </div>
-              <div>
-                <p class="text-dark mb-1">Click to download for</p>
-                <h3>Edge</h3>
+                <h3 id="other2-h"></h3>
               </div>
             </a>
           </div>
@@ -253,6 +244,63 @@
         alt="bg-image"
       />
     </section>
+    <script>
+      $(document).ready(function () {
+        var browser = navigator.userAgent;
+
+        var chrome_src = "images/icons/chrome_icon.png";
+        var chrome_alt = "Google Chrome broswer logo";
+
+        var fire_src = "images/icons/firefox_icon.png";
+        var fire_alt = "Mozilla Firefox browser logo";
+
+        var edge_src = "images/icons/edge_icon.png";
+        var edge_alt = "Microsoft Edge browser logo";
+
+        if (browser.indexOf("Chrome") != -1){
+          $('#main-img').attr("src", chrome_src);
+          $('#main-img').attr("alt", chrome_alt);
+          $('#main-h').replaceWith("<h3>Chrome</h3>");
+          $('#other1-img').attr("src", fire_src);
+          $('#other1-img').attr("alt", fire_alt);
+          $('#other1-h').replaceWith("<h3>Firefox</h3>");
+          $('#other2-img').attr("src", edge_src);
+          $('#other2-img').attr("alt", edge_alt);
+          $('#other2-h').replaceWith("<h3>Edge</h3>");
+        } else if (browser.indexOf("Firefox") != -1){
+          $('#main-img').attr("src", fire_src);
+          $('#main-img').attr("alt", fire_alt);
+          $('#main-h').replaceWith("<h3>Firefox</h3>");
+          $('#other1-img').attr("src", chrome_src);
+          $('#other1-img').attr("alt", chrome_alt);
+          $('#other1-h').replaceWith("<h3>Chrome</h3>");
+          $('#other2-img').attr("src", edge_src);
+          $('#other2-img').attr("alt", edge_alt);
+          $('#other2-h').replaceWith("<h3>Edge</h3>");
+        } else if (browser.indexOf("Edge") != -1){
+          $('#main-img').attr("src", edge_src);
+          $('#main-img').attr("alt", edge_alt);
+          $('#main-h').replaceWith("<h3>Edge</h3>");
+          $('#other1-img').attr("src", chrome_src);
+          $('#other1-img').attr("alt", chrome_src);
+          $('#other1-h').replaceWith("<h3>Chrome</h3>");
+          $('#other2-img').attr("src", fire_src);
+          $('#other2-img').attr("alt", fire_alt);
+          $('#other2-h').replaceWith("<h3>Firefox</h3>");
+        } else {
+          $('#main-img').attr("src", chrome_src);
+          $('#main-img').attr("alt", chrome_alt);
+          $('#main-h').replaceWith("<h3>Chrome</h3>");
+          $('#other1-img').attr("src", fire_src);
+          $('#other1-img').attr("alt", fire_alt);
+          $('#other1-h').replaceWith("<h3>Firefox</h3>");
+          $('#other2-img').attr("src", edge_src);
+          $('#other2-img').attr("alt", edge_alt);
+          $('#other2-h').replaceWith("<h3>Edge</h3>");
+        }
+        // console.log(browser);
+      });
+    </script>
     <!-- /download extension -->
 
     <!-- footer -->
@@ -269,7 +317,7 @@
             <div class="col-md-4"></div>
             <div class="col-md-4">
               <h5 class="text-light">Website</h5>
-              <a class="text-white paragraph-lg font-secondary" href="#"
+              <a class="text-white paragraph-lg font-secondary" href="index.html"
                 >Would You Like to Support</a
               >
             </div>
@@ -290,12 +338,10 @@
     </footer>
     <!-- /footer -->
 
-    <!-- jQuery -->
-    <script src="plugins/jQuery/jquery.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="plugins/bootstrap/bootstrap.min.js"></script>
 
     <!-- Main Script -->
-    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
