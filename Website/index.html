@@ -247,13 +247,10 @@
     <script>
       $(document).ready(function () {
         var browser = navigator.userAgent;
-
         var chrome_src = "images/icons/chrome_icon.png";
         var chrome_alt = "Google Chrome broswer logo";
-
-        var fire_src = "images/icons/firefox_icon.png";
-        var fire_alt = "Mozilla Firefox browser logo";
-
+        var fox_src = "images/icons/firefox_icon.png";
+        var fox_alt = "Mozilla Firefox browser logo";
         var edge_src = "images/icons/edge_icon.png";
         var edge_alt = "Microsoft Edge browser logo";
 
@@ -261,15 +258,15 @@
           $('#main-img').attr("src", chrome_src);
           $('#main-img').attr("alt", chrome_alt);
           $('#main-h').replaceWith("<h3>Chrome</h3>");
-          $('#other1-img').attr("src", fire_src);
-          $('#other1-img').attr("alt", fire_alt);
+          $('#other1-img').attr("src", fox_src);
+          $('#other1-img').attr("alt", fox_alt);
           $('#other1-h').replaceWith("<h3>Firefox</h3>");
           $('#other2-img').attr("src", edge_src);
           $('#other2-img').attr("alt", edge_alt);
           $('#other2-h').replaceWith("<h3>Edge</h3>");
         } else if (browser.indexOf("Firefox") != -1){
-          $('#main-img').attr("src", fire_src);
-          $('#main-img').attr("alt", fire_alt);
+          $('#main-img').attr("src", fox_src);
+          $('#main-img').attr("alt", fox_alt);
           $('#main-h').replaceWith("<h3>Firefox</h3>");
           $('#other1-img').attr("src", chrome_src);
           $('#other1-img').attr("alt", chrome_alt);
@@ -284,15 +281,15 @@
           $('#other1-img').attr("src", chrome_src);
           $('#other1-img').attr("alt", chrome_src);
           $('#other1-h').replaceWith("<h3>Chrome</h3>");
-          $('#other2-img').attr("src", fire_src);
-          $('#other2-img').attr("alt", fire_alt);
+          $('#other2-img').attr("src", fox_src);
+          $('#other2-img').attr("alt", fox_alt);
           $('#other2-h').replaceWith("<h3>Firefox</h3>");
         } else {
           $('#main-img').attr("src", chrome_src);
           $('#main-img').attr("alt", chrome_alt);
           $('#main-h').replaceWith("<h3>Chrome</h3>");
-          $('#other1-img').attr("src", fire_src);
-          $('#other1-img').attr("alt", fire_alt);
+          $('#other1-img').attr("src", fox_src);
+          $('#other1-img').attr("alt", fox_alt);
           $('#other1-h').replaceWith("<h3>Firefox</h3>");
           $('#other2-img').attr("src", edge_src);
           $('#other2-img').attr("alt", edge_alt);
