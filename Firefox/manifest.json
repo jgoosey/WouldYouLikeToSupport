@@ -2,18 +2,18 @@
   "name": "Would You Like to Support",
   "description": "Support your favorite content creator(s) by using their afilliate code(s) at checkout!",
   "author": "Jonathan Goss",
-  "version": "1.0",
+  "version": "0.5.2",
   "manifest_version": 2,
 
-  "permissions": ["<all_urls>"],
+  "content_security_policy": "script-src 'self'; object-src 'self';",
 
   "browser_action": {
-    "default_popup": "index.html",
+    "default_popup": "popup.html",
     "default_icon": "icons/W.png",
     "default_title": "Would You Like to Support"
   },
-  
+
   "icons": {
-    "128" :  "icons/WYLTS.png"
+    "128": "icons/WYLTS.png"
   }
 }

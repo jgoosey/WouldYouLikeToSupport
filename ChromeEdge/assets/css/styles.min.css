@@ -4,7 +4,8 @@ html,
 body {
   font-family: sans-serif;
   width: 700px;
-  height: auto;
+  height: 600px;
+  overflow: hidden;
 }
 #content {
   margin: 10px 0 10px 5px;
